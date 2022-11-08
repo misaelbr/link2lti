@@ -1,0 +1,35 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>UNISC - Link2LTI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://www.unisc.br/templates/shaper_university/favicon.ico" rel="shortcut icon"
+        type="image/vnd.microsoft.icon" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js">
+    </script>
+    <script src="scripts/app.js"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="form" action="javascript:;" method="post">
+            <h1>Link2LTI</h1>
+            <form>
+                <input type="text" name="link" placeholder="Cole o link da obra aqui">
+                <input class="button" type="submit" value="Formatar e copiar">
+            </form>
+            <div id="retorno">
+                <p class="message">O link para a LTI já está disponível na sua clipboard!
+                    Se preferir, copie o link abaixo e utilize como ferramenta externa no Moodle:
+                </p>
+                <p id="resultado" class="link"></p>
+            </div>
+            <div id="erro">
+                <p>Preencha o campo com o link correspondente da Biblioteca A!</p>
+            </div>
+        </div>
+    </div>
+</body>
