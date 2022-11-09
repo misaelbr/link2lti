@@ -12,7 +12,7 @@ $(document).ready(function () {
     let link = $('input[name="link"]').val();
     console.log(link);
     var re = new RegExp(
-      '^https:\\/\\/biblioteca-a..+.garden\\/viewer\\/([0-9]+)\\/?.*$',
+      '^https:\\/\\/biblioteca-a.read.garden\\/viewer\\/([0-9]+)\\/?.*$',
       'gm',
     );
     var match = re.exec(link);
