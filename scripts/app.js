@@ -21,13 +21,13 @@ $(document).ready(function () {
     if (match !== null) {
       let lti = `https://bibliotecaa.grupoa.com.br/lti/launch.php?bookid=${match[1]}`;
       $('#erro').hide();
-      $('#retorno').show();
-      $('#resultado').text(lti).show();
+      $('#retorno').css('display','flex').css('flex-direction','column').css('align-items','center').css('justify-content','center');
+      $('#resultado').text(lti).css('display','flex');
       navigator.clipboard.writeText(lti);
       return;
     } else {
       $('#retorno').hide();
-      $('#erro').show();
+      $('#erro').css('display','flex');
       return;
     }
   });

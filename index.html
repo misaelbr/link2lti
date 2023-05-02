@@ -1,35 +1,76 @@
 <html lang="pt-br">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>UNISC - Link2LTI</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://www.unisc.br/templates/shaper_university/favicon.ico" rel="shortcut icon"
-        type="image/vnd.microsoft.icon" />
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js">
-    </script>
+    <link rel="stylesheet" href="css/global.css" />
+    <link
+      href="https://www.unisc.br/templates/shaper_university/favicon.ico"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="scripts/app.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="container">
+      <header>
+        <div id="header">
+          <img src="assets/logoead.png" alt="" />
+          <h1>Utilitários</h1>
+        </div>
+        <div id="banner" class="landing">
+          <h1>Link2LTI</h1>
+        </div>
+      </header>
+      <main>
+        <div id="cards">
+          <form>
+            <article class="card blue">
+              <img src="assets/url.png" alt="Link" />
+              <input
+                type="text"
+                name="link"
+                placeholder="Cole o link da obra aqui"
+              />
+              <button type="submit">Formatar e copiar</button>
 
-        <div id="form" action="javascript:;" method="post">
-            <h1>Link2LTI</h1>
-            <form>
-                <input type="text" name="link" placeholder="Cole o link da obra aqui">
-                <input class="button" type="submit" value="Formatar e copiar">
-            </form>
-            <div id="retorno">
-                <p class="message">O link para a LTI já está disponível na sua clipboard!
-                    Se preferir, copie o link abaixo e utilize como ferramenta externa no Moodle:
+              <div id="retorno">
+                <p class="message">
+                  O link para a LTI já está disponível na sua clipboard! Se
+                  preferir, copie o link abaixo e utilize como ferramenta
+                  externa no Moodle:
                 </p>
                 <p id="resultado" class="link"></p>
-            </div>
-            <div id="erro">
-                <p>Preencha o campo com o link correspondente da Biblioteca A!</p>
-            </div>
+              </div>
+              <div id="erro">
+                <p>
+                  Preencha o campo com o link correspondente da Biblioteca A!
+                </p>
+              </div>
+            </article>
+          </form>
         </div>
+      </main>
+      <footer>
+        <div id="contacts">
+          <h1>Suporte EAD</h1>
+          <p>
+            E-mail:
+            <a href="mailto:suporte-ead@unisc.br">suporte-ead@unisc.br</a>
+          </p>
+          <p>
+            Telefone/WhatsApp<a
+              href="https://api.whatsapp.com/send?phone=555137177664"
+              target="_blank"
+              >(51) 3717-7664</a
+            >
+          </p>
+        </div>
+        <div id="logo"><img src="assets/logo_unisc.png" alt="logo" /></div>
+      </footer>
     </div>
-</body>
+  </body>
+</html>
