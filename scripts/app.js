@@ -9,7 +9,7 @@ $(document).ready(function () {
   $('form').submit(function (event) {
     event.preventDefault();
 
-    let link = $('input[name="link"]').val();
+    let link = $('input[name="link"]').val().trim();
     console.log(link);
     var re = new RegExp(
       '^https:\\/\\/biblioteca-a.read.garden\\/viewer\\/([0-9]+)\\/?.*$',
