@@ -414,16 +414,16 @@ footer {
 
 @media only screen and (max-width: 627px) {
   .card {
-    width: 20rem;
+    max-width: 20rem;
   }
 
   .card input[type='text'] {
-    max-width: 20rem;
+    max-width: 17rem;
     margin: 0.5rem 0;
   }
 
   .card button {
-    max-width: 20rem;
+    max-width: 17rem;
     margin: 0.5rem 0;
   }
 
