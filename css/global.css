@@ -140,13 +140,13 @@ main {
   margin: 1rem;
   padding: 1rem;
   min-height: 18rem;
-  width: 58rem;
+  width: 40rem;
   border: solid 0.16rem;
   text-align: center;
 }
 
 .card input[type='text'] {
-  width: 100%;
+  width: 90%;
   height: 2.6rem;
   padding: 10px;
   margin-bottom: 8px;
@@ -170,7 +170,7 @@ main {
   font-weight: 700;
   text-decoration: none;
   text-shadow: 0px 1px 0px #3d768a;
-  width: 80%;
+  width: 70%;
   height: 2.6rem;
   margin-top: 0.6rem;
 }
@@ -239,16 +239,16 @@ main {
   text-align: center;
 }
 
-.card #retorno .message {
+.message {
   font-size: 1em;
   font-weight: 700;
-  color: var(--bg-white-global);
+  color: var(--bg-dark-global);
   margin: 0.5rem 0 0.5rem 0;
   text-align: justify;
   margin: 8px;
 }
 
-.card #retorno .link {
+.link {
   font-size: 1em;
   font-weight: 400;
   color: #ff0000;

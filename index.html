@@ -4,14 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
     <title>UNISC - Link2LTI</title>
-    <link rel="stylesheet" href="css/global.css" />
     <link
-      href="https://www.unisc.br/templates/shaper_university/favicon.ico"
-      rel="shortcut icon"
-      type="image/vnd.microsoft.icon"
+    href="https://www.unisc.br/templates/shaper_university/favicon.ico"
+    rel="shortcut icon"
+    type="image/vnd.microsoft.icon"
     />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
   </head>
 
   <body>
@@ -38,12 +43,7 @@
               <button type="submit">Formatar e copiar</button>
 
               <div id="retorno">
-                <p class="message">
-                  O link para a LTI já está disponível na sua clipboard! Se
-                  preferir, copie o link abaixo e utilize como ferramenta
-                  externa no Moodle:
-                </p>
-                <p id="resultado" class="link"></p>
+                
               </div>
               <div id="erro">
                 <p>
@@ -52,6 +52,15 @@
               </div>
             </article>
           </form>
+        </div>
+        <div id="sucesso" class="modal">
+          <p class="message">
+            O link para a LTI já está disponível na sua clipboard! Se
+            preferir, copie o link abaixo e utilize como ferramenta
+            externa no Moodle:
+          </p>
+          <p id="resultado" class="link"></p>
+          <a href="#" rel="modal:close">Fechar</a>
         </div>
       </main>
       <footer>
