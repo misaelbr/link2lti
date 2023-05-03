@@ -23,6 +23,8 @@ $(document).ready(function () {
       $('#erro').hide();
       $('#resultado').text(lti);
       $('#sucesso').modal({fadeDuration: 100});
+      $('.card').css('background-color','var(--gray-500');
+      $('#cards').css('background-color','var(--gray-400)');
       navigator.clipboard.writeText(lti);
       $('input[name="link"]').val('');
       return;
@@ -30,5 +32,9 @@ $(document).ready(function () {
       $('#erro').css('display','flex');
       return;
     }
+  });
+  $('#sucesso').on($.modal.CLOSE, function(event, modal) {
+    $('.card').css('background-color','var(--gray-600)');
+    $('#cards').css('background-color','var(--gray-500)');
   });
 });
