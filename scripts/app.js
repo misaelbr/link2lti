@@ -22,7 +22,7 @@ $(document).ready(function () {
       let lti = `https://bibliotecaa.grupoa.com.br/lti/launch.php?bookid=${match[1]}`;
       $('#erro').hide();
       $('#resultado').text(lti);
-      $('#sucesso').modal({fadeDuration: 100});
+      $('#sucesso').modal({fadeDuration: 100, fadeDelay: 0.50, closeClass:'icon-remove'});
       $('.card').css('background-color','var(--gray-500');
       $('#cards').css('background-color','var(--gray-400)');
       navigator.clipboard.writeText(lti);

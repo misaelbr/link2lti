@@ -149,7 +149,7 @@ main {
   width: 90%;
   height: 2.6rem;
   padding: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 0.2rem;
   border-radius: 0.5rem;
   border: none;
   background: #f1f1f1;
@@ -172,7 +172,7 @@ main {
   text-shadow: 0px 1px 0px #3d768a;
   width: 70%;
   height: 2.6rem;
-  margin-top: 0.6rem;
+  margin-top: 0.3rem;
 }
 
 .card button:hover {
@@ -203,7 +203,7 @@ main {
 .card img {
   height: 5rem;
   width: auto;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1.6rem;
 }
 
 .card h1 {
@@ -353,6 +353,28 @@ footer {
   height: 3rem;
   width: auto;
 }
+
+.modal a.close-modal[class*="icon-"] {
+  top: -10px;
+  right: -10px;
+  width: 2rem;
+  height: 2rem;
+  /* color: #fff;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0; */
+  background-image: url('data:image/png;base64,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');
+  border: 2px solid #fff;
+  -webkit-border-radius:  26px;
+  -moz-border-radius:     26px;
+  -o-border-radius:       26px;
+  -ms-border-radius:      26px;
+  -moz-box-shadow:    1px 1px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  box-shadow:         1px 1px 5px rgba(0,0,0,0.5);
+}
+
 
 @media only screen and (max-width: 976px) {
   #cards {
