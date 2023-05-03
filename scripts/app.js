@@ -22,9 +22,7 @@ $(document).ready(function () {
       let lti = `https://bibliotecaa.grupoa.com.br/lti/launch.php?bookid=${match[1]}`;
       $('#erro').hide();
       $('#resultado').text(lti);
-      $('#sucesso').modal({fadeDuration: 100, fadeDelay: 0.50, closeClass:'icon-remove'});
-      $('.card').css('background-color','var(--gray-500');
-      $('#cards').css('background-color','var(--gray-400)');
+      $('#sucesso').modal({fadeDuration: 500, fadeDelay: 1, closeClass:'icon-remove'});
       navigator.clipboard.writeText(lti);
       $('input[name="link"]').val('');
       return;
@@ -32,9 +30,5 @@ $(document).ready(function () {
       $('#erro').css('display','flex');
       return;
     }
-  });
-  $('#sucesso').on($.modal.CLOSE, function(event, modal) {
-    $('.card').css('background-color','var(--gray-600)');
-    $('#cards').css('background-color','var(--gray-500)');
   });
 });
